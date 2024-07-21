@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 主設定 */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0 auto;
+  outline: 1px solid lightskyblue;
+}
+
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 1296px; //12grid(86px)  gutter24px
+  max-width: 100%; 
+  margin: 0 auto;
+}
+.content-out{
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.content-in{
+  padding-left: 12px;
+  padding-right:  12px;
+}
+.w-50 {
+  width: 50%;
+}
+.d-fx{
+  display: flex;
+}
+.fxdc{
+  flex-direction: column;
+}
+.fxdrr{
+  flex-direction: row-reverse;
+}
+.jcsb{
+  justify-content: space-between;
+}
+.jcc{
+  justify-content: center;
+}
+.aic{
+  align-items: center;
+}
+.ml-a{
+  margin-left: auto;
+}
+
+/* 顏色 */
+.c-gr{
+  color: #D1D1D1;
+}
+.c-b{
+  color:black;
+}
+.c-g{
+    color: #00FFA3;
+}
+.c-d{
+    color: #15161D;
+}
+
+/* 背景 */
+
+.bg-b{
+    background: #000;
+    padding: 52px;
+}
+.btn-l{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 278.5px;
+  
+}
+.btn-w{
+  display: flex;
+  padding: 12px 24px;
+  border-radius: 32px;
+  background: #fff;
+  gap:4px;
+}
+/* fit-content 要如何向外推擠?
+內容破版了，超出container的邊界 */
+.btn-b{
+  background: #000;
+}
+
+/* font-style */
+h1 {
+  font-size: 128px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+/*各區塊排版*/
+.m-0-a {
+  margin: 0 auto;
+}
+
+.t-a-c {
+  text-align: center;
+}
+
+.m-l-a {
+  margin-left: auto;
+}
+
+
+/* 間距設定 */
+
+/* 按鈕寬度 */
+.btn-l{
+    width: 278.5px;
+}
+/* footer設定 */
+
