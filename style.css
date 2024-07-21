@@ -58,7 +58,7 @@ table {
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0 auto;
-  outline: 1px solid lightskyblue;
+  /* outline: 1px solid lightskyblue; */
 }
 
 body {
@@ -78,25 +78,58 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+/* 排版 */
 .container {
   width: 1296px; //12grid(86px)  gutter24px
   max-width: 100%; 
   margin: 0 auto;
+  padding-left: 12px;//改善網頁貼邊
+  padding-right: 12px;//改善網頁貼邊
 }
-.content-out{
+.row{//消除內容器左右過多的padding
   margin-left: -12px;
   margin-right: -12px;
 }
-.content-in{
+.col-2{
+  width: 220px;
   padding-left: 12px;
-  padding-right:  12px;
+  padding-right: 12px;
 }
-.w-50 {
-  width: 50%;
+.col-3{
+  width: 330px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-5{
+  width: 550px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-6{
+  width: 660px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.w-50{
+  width:50%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-7{
+  width: 770px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-8{
+  width: 880px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .d-fx{
   display: flex;
+}
+.wrap{
+  flex-wrap: wrap;
 }
 .fxdc{
   flex-direction: column;
@@ -113,11 +146,32 @@ a {
 .aic{
   align-items: center;
 }
+.m-0-a{
+  margin: 0 auto;
+}
+.t-a-c{
+  text-align: center;
+}
 .ml-a{
   margin-left: auto;
 }
-
-/* 顏色 */
+.mr-a{
+  margin-right: auto;
+}
+}
+.mb-6{
+  margin-bottom: 24px;
+}
+.mb-28{
+  margin-bottom: 28px;
+}
+.mb-8{
+  margin-bottom: 32px;
+}
+.mb-9{
+  margin-bottom: 36px;
+}
+/* 文字顏色 */
 .c-gr{
   color: #D1D1D1;
 }
@@ -125,37 +179,48 @@ a {
   color:black;
 }
 .c-g{
-    color: #00FFA3;
+  color: #00FFA3;
 }
 .c-d{
-    color: #15161D;
+  color: #15161D;
+}
+.c-w{
+  color: #fff;
 }
 
 /* 背景 */
 
 .bg-b{
-    background: #000;
-    padding: 52px;
+  background: #000;
+}
+.bg-j1{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.3); /* 30% 透明度的顏色 */
+}
+.bg-j2{
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
 }
 .btn-l{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 278.5px;
-  
 }
 .btn-w{
   display: flex;
   padding: 12px 24px;
   border-radius: 32px;
   background: #fff;
-  gap:4px;
 }
-/* fit-content 要如何向外推擠?
-內容破版了，超出container的邊界 */
 .btn-b{
+  display: block;
+  display: flex;
+  padding: 12px 24px;
+  border-radius: 32px;
   background: #000;
 }
+
 
 /* font-style */
 h1 {
@@ -182,17 +247,49 @@ h2 {
 .t-a-c {
   text-align: center;
 }
-
 .m-l-a {
   margin-left: auto;
 }
 
-
 /* 間距設定 */
-
-/* 按鈕寬度 */
-.btn-l{
-    width: 278.5px;
+.p-4{
+  padding: 24px;
 }
-/* footer設定 */
+.p-s{
+  padding: 40px 0;
+}
+.p-m{
+  padding-top: 72px;
+  padding-bottom:32px;
+}
+.p-l{
+  padding: 96px 0;
+}
+.p-xl{
+  padding: 160px 0;
+}
+.g-1{
+  gap:4px;
+}
+.g-4{
+  gap:16px;
+}
+.g-5{
+  gap:20px;
+}
+.g-6{
+  gap:24px;
+}
+.g-8{
+  gap:32px;
+}
+.g-9{
+  gap:36px;
+}
 
+
+/* 其他設定 */
+
+.card{
+  border:1px aolid E3E3E3;
+}
